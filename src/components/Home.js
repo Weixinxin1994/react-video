@@ -111,6 +111,19 @@ handel=(key)=>{
     this.setState({
         list3:list3
     })
+    localStorage.setItem('todoList',JSON.stringify(list3))
+}
+
+// 生命周期函数
+componentDidMount(){
+    var list3=localStorage.getItem('list3');
+    JSON.parse(list3);
+    if(list3){
+        this.setState({
+            list3:list3
+        })
+        
+    }
 }
 
 // 模板
