@@ -1,25 +1,19 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+// 根组件
+// 开发页面是不在根组件上开发的  是在根组件上动态的挂在子组件的 
 
+import React, { Component } from 'react';
+// import logo from './assets/images/logo.svg';
+// import './assets/css/App.css';
+import News from './components/News';
+
+import Home from'./components/Home'
 class App extends Component {
+   // jsx语法  render模板
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+        <Home></Home>
+        <News></News>
       </div>
     );
   }
