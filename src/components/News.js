@@ -1,7 +1,8 @@
 import React from 'react';
 import Header from './Header.js';
 import Footer from './Footer.js'; 
-import {BrowserRouter as Router,Route,Link} from 'react-router-dom'
+import {BrowserRouter as Router,Route,Link} from 'react-router-dom';
+import '../assets/css/index.css';
 
 // react的组件解决HTML标签构建应用的不足.
 // 使用组件的好处:
@@ -52,7 +53,7 @@ getFooter=()=>{
         return(
         // <Router>
         <div>
-          <Header title={this.state.news} news={this} />
+          {/* <Header title={this.state.news} news={this} />
           <ul>
               <li>aaa</li>
               <li>aaa</li> 
@@ -67,7 +68,18 @@ getFooter=()=>{
               return (<Link to={`/fetch?aid=${value.aid}`}>{value.name}</Link>)
             })
           }
-          <button onClick={this.getFooter}>获取子组件的this</button>
+          <button onClick={this.getFooter}>获取子组件的this</button> */}
+
+
+          <div className='content'>
+                 <div className='left'>
+                左侧
+                </div>
+                <div className='right'>
+                右侧
+                </div>
+                
+            </div>
         </div>
         // </Router>
         )
