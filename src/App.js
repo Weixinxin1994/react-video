@@ -4,6 +4,7 @@
 
 // react-router可以让根组件动态的去挂载不同的其他组件
 // 根据用户访问的地址动态的加载不同的组件
+
 import {BrowserRouter as Router,Route,Link} from 'react-router-dom'
 
 import React, { Component } from 'react';

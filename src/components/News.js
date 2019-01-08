@@ -3,6 +3,8 @@ import Header from './Header.js';
 import Footer from './Footer.js'; 
 import {BrowserRouter as Router,Route,Link} from 'react-router-dom';
 import '../assets/css/index.css';
+import { Button,Icon } from 'antd';
+
 
 // react的组件解决HTML标签构建应用的不足.
 // 使用组件的好处:
@@ -53,6 +55,11 @@ getFooter=()=>{
         return(
         // <Router>
         <div>
+             <Button type="primary">Primary</Button>
+              <Button>Default</Button>
+    <Button type="dashed">Dashed</Button>
+    <Button type="danger">Danger</Button>
+    <Icon type="step-backward" />
           {/* <Header title={this.state.news} news={this} />
           <ul>
               <li>aaa</li>
